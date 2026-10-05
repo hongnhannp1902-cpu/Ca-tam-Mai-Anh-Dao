@@ -50,26 +50,38 @@ const countIO = new IntersectionObserver(entries => entries.forEach(e => {
 }), { threshold: 0.6 });
 $$('[data-count]').forEach(el => countIO.observe(el));
 
-// ---- Đánh dấu mục menu đang xem ----
+// ---- Chuyển trang: mỗi mục menu là 1 trang riêng (#gioi-thieu, #hinh-anh, ...) ----
+const views = $$('.view');
 const navLinks = $$('.main-nav a');
-const navIO = new IntersectionObserver(entries => entries.forEach(e => {
-  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
-}), { rootMargin: '-45% 0px -50% 0px' });
-$$('main section[id]').forEach(s => navIO.observe(s));
-
-// ---- Nút ĐẶT BÀN: cuộn tới form + đặt con trỏ vào ô Họ tên ----
 const form = $('#quote-form');
-$$('[data-booking]').forEach(a => a.addEventListener('click', ev => {
-  ev.preventDefault();
+function focusForm() {
   form.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
   setTimeout(() => {
     $('#f-name').focus({ preventScroll: true });
     form.classList.remove('flash'); void form.offsetWidth; form.classList.add('flash');
-  }, reduceMotion ? 0 : 700);
+  }, reduceMotion ? 0 : 600);
+}
+function route() {
+  const hash = location.hash.slice(1);
+  const booking = hash === 'dat-ban'; // nút ĐẶT BÀN → trang Liên hệ + đặt con trỏ vào form
+  const view = views.find(v => v.dataset.page === (booking ? 'lien-he' : hash)) || views[0];
+  if (!view.classList.contains('is-active')) {
+    views.forEach(v => v.classList.toggle('is-active', v === view));
+    // chạy lại hiệu ứng xuất hiện mỗi lần mở trang
+    $$('[data-reveal]', view).forEach(el => { el.classList.remove('in'); revealIO.observe(el); });
+    scrollTo({ top: 0, behavior: 'instant' });
+  }
+  document.body.dataset.page = view.dataset.page;
+  document.title = view.dataset.title;
+  navLinks.forEach(a => a.classList.toggle('active', a.hash === '#' + view.dataset.page));
+  if (booking) focusForm();
+}
+addEventListener('hashchange', route);
+route();
+// đang ở #dat-ban mà bấm Đặt bàn lần nữa: hash không đổi nên gọi trực tiếp
+$$('[data-booking]').forEach(a => a.addEventListener('click', ev => {
+  if (location.hash === '#dat-ban') { ev.preventDefault(); focusForm(); }
 }));
-// ẩn nút nổi khi đang ở phần form
-const fab = $('.fab');
-new IntersectionObserver(([e]) => fab.classList.toggle('hide', e.isIntersecting), { threshold: 0.25 }).observe(form);
 
 // ---- Gửi form vào Google Form ----
 form.addEventListener('submit', async ev => {

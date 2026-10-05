@@ -21,9 +21,9 @@
 </head>
 <body>
 
-<header class="site-header" id="top">
+<header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="Cá Tầm Mai Anh Đào – về đầu trang">
+    <a class="brand" href="#trang-chu" aria-label="Cá Tầm Mai Anh Đào – Trang chủ">
       <img src="assets/img/logo/logo-ngang-trang.png" alt="Cá Tầm Mai Anh Đào" width="600" height="165">
     </a>
     <nav class="main-nav" id="main-nav" aria-label="Menu chính">
@@ -33,14 +33,15 @@
       <a href="#tuyen-dung">Tuyển dụng</a>
       <a href="#lien-he">Liên hệ</a>
     </nav>
-    <a class="header-phone" href="tel:02633900300"><span class="dot"></span>02633.900.300 <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href="#dat-ban" data-booking>Đặt bàn</a>
     <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
   </div>
 </header>
 
 <main>
 
-  <!-- HERO -->
+<!-- ===================== TRANG CHỦ ===================== -->
+<div class="view" data-page="trang-chu" data-title="Cá Tầm Mai Anh Đào – Nhà hàng sân vườn Đà Lạt">
   <section class="hero">
     <div class="hero-bg" data-parallax><img src="assets/img/intro/toan-canh.jpg" alt="" width="1471" height="828" fetchpriority="high"></div>
     <div class="container hero-content">
@@ -48,20 +49,65 @@
       <h1 data-reveal style="--d:.1s">Thưởng vị Đà Lạt,<em>gắn kết yêu thương.</em></h1>
       <p class="hero-lead" data-reveal style="--d:.2s">Đặc sản cá tầm tươi sống giữa khuôn viên sân vườn 16.700 m² – nơi mỗi bữa ăn là dịp sum họp bên người thân và lưu giữ những kỷ niệm đẹp.</p>
       <div class="hero-actions" data-reveal style="--d:.3s">
-        <a class="btn btn-light" href="#lien-he" data-booking>Đặt bàn <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-light" href="#dat-ban" data-booking>Đặt bàn <span aria-hidden="true">↗</span></a>
         <a class="btn btn-ghost" href="#thuc-don">Xem thực đơn</a>
       </div>
     </div>
-    <div class="container hero-foot"><a href="#gioi-thieu">Khám phá <span aria-hidden="true">↓</span></a></div>
+    <div class="container hero-foot"><a href="#gioi-thieu">Câu chuyện Mai Anh Đào <span aria-hidden="true">→</span></a></div>
   </section>
 
-  <!-- GIỚI THIỆU -->
-  <section class="section bg-cream" id="gioi-thieu">
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-head">
+        <p class="label" data-reveal>Khám phá</p>
+        <h2 class="title dark" data-reveal style="--d:.1s">Một điểm đến<em>giữa lòng Đà Lạt.</em></h2>
+      </div>
+      <div class="explore">
+        <a class="explore-card" href="#gioi-thieu" data-reveal>
+          <img src="assets/img/gallery/thumb/khong-gian-mai-anh-dao.jpg" alt="" width="900" height="507" loading="lazy">
+          <span class="explore-num">01</span>
+          <span class="explore-title">Giới thiệu</span>
+          <span class="explore-more">Câu chuyện Mai Anh Đào →</span>
+        </a>
+        <a class="explore-card" href="#hinh-anh" data-reveal style="--d:.1s">
+          <img src="assets/img/gallery/thumb/sanh-vu-mon.jpg" alt="" width="900" height="600" loading="lazy">
+          <span class="explore-num">02</span>
+          <span class="explore-title">Hình ảnh</span>
+          <span class="explore-more">Không gian &amp; món ngon →</span>
+        </a>
+        <a class="explore-card" href="#thuc-don" data-reveal style="--d:.2s">
+          <img src="assets/img/gallery/thumb/lau-ca-tam.jpg" alt="" width="900" height="600" loading="lazy">
+          <span class="explore-num">03</span>
+          <span class="explore-title">Thực đơn</span>
+          <span class="explore-more">Đặc sản cá tầm →</span>
+        </a>
+        <a class="explore-card" href="#tuyen-dung" data-reveal style="--d:.3s">
+          <img src="assets/img/gallery/thumb/sanh-hoi-nghi.jpg" alt="" width="900" height="507" loading="lazy">
+          <span class="explore-num">04</span>
+          <span class="explore-title">Tuyển dụng</span>
+          <span class="explore-more">Cùng phát triển →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== GIỚI THIỆU ===================== -->
+<div class="view" data-page="gioi-thieu" data-title="Giới thiệu – Cá Tầm Mai Anh Đào">
+  <section class="page-hero">
+    <img src="assets/img/intro/san-vuon.jpg" alt="" width="1400" height="933">
+    <div class="container">
+      <p class="crumb"><a href="#trang-chu">Trang chủ</a> / Giới thiệu</p>
+      <h1>Cá Tầm Mai Anh Đào<em>thưởng vị Đà Lạt, gắn kết yêu thương.</em></h1>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
     <div class="container intro-lead">
       <div class="num" data-reveal>01</div>
       <div>
-        <p class="label" data-reveal>Giới thiệu</p>
-        <h2 class="title dark" data-reveal style="--d:.1s">Cá Tầm Mai Anh Đào<em>— thưởng vị Đà Lạt, gắn kết yêu thương.</em></h2>
+        <p class="label" data-reveal>Về chúng tôi</p>
+        <h2 class="title dark" data-reveal style="--d:.1s">Không gian xanh<em>hài hòa cùng thiên nhiên.</em></h2>
       </div>
       <div class="intro-text" data-reveal style="--d:.2s">
         <p>Tọa lạc trong khuôn viên sân vườn rộng 16.700 m², Nhà hàng Cá Tầm Mai Anh Đào mang đến không gian xanh thoáng mát, hài hòa cùng thiên nhiên Đà Lạt. Giữa cảnh quan thư thái, mỗi bữa ăn là dịp để thực khách thưởng thức ẩm thực, sum họp bên người thân và lưu giữ những kỷ niệm đẹp trong hành trình khám phá thành phố.</p>
@@ -144,21 +190,27 @@
           <h3>Một điểm đến trong<em>hệ sinh thái Mai Anh Đào.</em></h3>
           <p>Cá Tầm Mai Anh Đào thuộc Công ty TNHH Mai Anh Đào Group, doanh nghiệp đang từng bước hoàn thiện hệ sinh thái kết nối ẩm thực, lưu trú, cà phê và trà, du lịch, phương tiện di chuyển, đặc sản địa phương và bất động sản tại Đà Lạt. Đáp ứng mọi nhu cầu của doanh nghiệp, nguồn nguyên liệu có nguồn gốc rõ ràng, phục vụ chuyên nghiệp, báo giá, xuất hóa đơn,…</p>
           <p>Với mong muốn mang những điều tốt đẹp của Đà Lạt đến gần hơn với du khách, Mai Anh Đào Group hướng đến việc đồng hành từ những chuyến ghé thăm, kỳ nghỉ và trải nghiệm địa phương đến sự gắn bó lâu dài với thành phố. Nhà hàng là nơi tinh thần ấy được thể hiện qua từng bữa ăn và sự quan tâm dành cho mỗi vị khách.</p>
-          <a class="btn btn-light" href="#lien-he" data-booking>Lên kế hoạch cùng chúng tôi <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-light" href="#dat-ban" data-booking>Lên kế hoạch cùng chúng tôi <span aria-hidden="true">↗</span></a>
         </div>
       </article>
 
     </div>
   </section>
+</div>
 
-  <!-- HÌNH ẢNH -->
-  <section class="section bg-deep" id="hinh-anh">
+<!-- ===================== HÌNH ẢNH ===================== -->
+<div class="view" data-page="hinh-anh" data-title="Hình ảnh – Cá Tầm Mai Anh Đào">
+  <section class="page-hero">
+    <img src="assets/img/gallery/sanh-vu-mon.jpg" alt="" width="1536" height="1024">
     <div class="container">
-      <div class="section-head">
-        <p class="label" data-reveal>Hình ảnh</p>
-        <h2 class="title" data-reveal style="--d:.1s">Khoảnh khắc<em>Mai Anh Đào.</em></h2>
-      </div>
-      <div class="masonry" data-gallery>
+      <p class="crumb"><a href="#trang-chu">Trang chủ</a> / Hình ảnh</p>
+      <h1>Khoảnh khắc<em>Mai Anh Đào.</em></h1>
+    </div>
+  </section>
+
+  <section class="section bg-deep">
+    <div class="container">
+      <div class="masonry">
         <!-- Thêm ảnh: copy 1 khối <a> bên dưới, đổi tên file & chú thích -->
         <a class="tile" data-reveal href="assets/img/gallery/sanh-vu-mon.jpg"><img src="assets/img/gallery/thumb/sanh-vu-mon.jpg" alt="Sảnh Vũ Môn" width="900" height="600" loading="lazy"><span>Sảnh Vũ Môn</span></a>
         <a class="tile" data-reveal href="assets/img/gallery/mon-ca-tam-1.jpg"><img src="assets/img/gallery/thumb/mon-ca-tam-1.jpg" alt="Món ngon từ cá tầm" width="900" height="600" loading="lazy"><span>Món ngon từ cá tầm</span></a>
@@ -171,14 +223,24 @@
       </div>
     </div>
   </section>
+</div>
 
-  <!-- THỰC ĐƠN -->
-  <section class="section bg-cream" id="thuc-don">
+<!-- ===================== THỰC ĐƠN ===================== -->
+<div class="view" data-page="thuc-don" data-title="Thực đơn – Cá Tầm Mai Anh Đào">
+  <section class="page-hero">
+    <img src="assets/img/gallery/mon-ca-tam-2.jpg" alt="" width="1800" height="1200">
+    <div class="container">
+      <p class="crumb"><a href="#trang-chu">Trang chủ</a> / Thực đơn</p>
+      <h1>Cá tầm tươi sống,<em>chế biến đa dạng.</em></h1>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
     <div class="container">
       <div class="menu-intro">
         <div>
           <p class="label" data-reveal>Thực đơn</p>
-          <h2 class="title dark" data-reveal style="--d:.1s">Cá tầm tươi sống,<em>chế biến đa dạng.</em></h2>
+          <h2 class="title dark" data-reveal style="--d:.1s">Hương vị hài hòa,<em>linh hoạt theo khẩu vị.</em></h2>
         </div>
         <div class="menu-text" data-reveal style="--d:.2s">
           <p>Thực đơn tại Cá Tầm Mai Anh Đào nổi bật với cá tầm tươi sống được chế biến đa dạng, từ lẩu măng chua, nướng muối ớt đến sốt bơ tỏi và sashimi. Bên cạnh đó là các món gà ta, gà tre, bò, heo, cá và hải sản, kết hợp cùng rau xanh Đà Lạt. Từ gà nướng cơm lam, bông atiso hầm giò heo đến những món cơm, canh quen thuộc và thực đơn chay, nhà hàng mang đến nhiều lựa chọn cho bữa ăn gia đình, khách đoàn và các buổi tiệc.</p>
@@ -197,19 +259,28 @@
         <p class="flip-hint">Kéo góc trang hoặc vuốt để lật</p>
         <div class="menu-actions">
           <a class="btn btn-dark" href="assets/menu/menu-ca-tam-mai-anh-dao.pdf" download>Tải menu PDF <span aria-hidden="true">↓</span></a>
-          <a class="btn btn-outline" href="#lien-he" data-booking>Nhận báo giá thực đơn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#dat-ban" data-booking>Đặt bàn &amp; nhận tư vấn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div>
   </section>
+</div>
 
-  <!-- TUYỂN DỤNG -->
-  <section class="section bg-dark" id="tuyen-dung">
+<!-- ===================== TUYỂN DỤNG ===================== -->
+<div class="view" data-page="tuyen-dung" data-title="Tuyển dụng – Cá Tầm Mai Anh Đào">
+  <section class="page-hero">
+    <img src="assets/img/intro/sanh-chinh.jpg" alt="" width="1400" height="933">
+    <div class="container">
+      <p class="crumb"><a href="#trang-chu">Trang chủ</a> / Tuyển dụng</p>
+      <h1>Cùng Mai Anh Đào<em>xây dựng và phát triển.</em></h1>
+    </div>
+  </section>
+
+  <section class="section bg-dark">
     <div class="container">
       <div class="section-head">
-        <p class="label" data-reveal>Tuyển dụng</p>
-        <h2 class="title" data-reveal style="--d:.1s">Cùng Mai Anh Đào<em>xây dựng và phát triển.</em></h2>
-        <p class="section-sub" data-reveal style="--d:.2s">Nhà hàng Cá Tầm Mai Anh Đào luôn chào đón những cộng sự tận tâm cùng xây dựng và phát triển.</p>
+        <p class="label" data-reveal>Cơ hội nghề nghiệp</p>
+        <p class="section-sub" data-reveal style="--d:.1s">Nhà hàng Cá Tầm Mai Anh Đào luôn chào đón những cộng sự tận tâm cùng xây dựng và phát triển. Quét mã QR trên poster hoặc bấm “Ứng tuyển ngay” để điền thông tin.</p>
       </div>
 
       <div class="jobs">
@@ -316,41 +387,18 @@
       </div>
     </div>
   </section>
+</div>
 
-  <!-- LỜI MỜI -->
-  <section class="invite">
-    <div class="container invite-inner">
-      <div>
-        <p class="label dark" data-reveal>Một lời mời chân thành</p>
-        <h2 data-reveal style="--d:.1s">Sum họp bên người thân, lưu giữ những kỷ niệm đẹp giữa lòng Đà Lạt.</h2>
-      </div>
-      <a class="link-arrow dark" href="#lien-he" data-booking data-reveal style="--d:.2s">Đặt bàn ngay <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <!-- LIÊN HỆ -->
-  <section class="section bg-cream" id="lien-he">
-    <div class="container contact">
-      <div class="contact-info">
-        <p class="label" data-reveal>Liên hệ</p>
-        <h2 class="title dark" data-reveal style="--d:.1s">Để lại thông tin,<em>chúng tôi sẽ liên hệ.</em></h2>
-        <p data-reveal style="--d:.2s">Nhân viên tư vấn sẽ gọi lại để tư vấn thực đơn theo nhu cầu, khẩu vị và ngân sách của bạn.</p>
-        <ul class="info-list" data-reveal style="--d:.25s">
-          <li><b>Công ty TNHH Mai Anh Đào Group</b><br>MST: 5801566808</li>
-          <li><span class="k">Địa chỉ</span>222/22 Mai Anh Đào, Phường Lâm Viên, Đà Lạt, Lâm Đồng</li>
-          <li><span class="k">Điện thoại</span><a href="tel:02633900300">02633.900.300</a> · <a href="tel:0913683605">0913.683.605</a></li>
-          <li><span class="k">Email</span><a href="mailto:maitranhdao.nhahang@gmail.com">maitranhdao.nhahang@gmail.com</a></li>
-          <li><span class="k">Giờ mở cửa</span>8:00 – 22:00 hằng ngày</li>
-        </ul>
-        <div class="map" data-reveal style="--d:.3s">
-          <iframe title="Bản đồ Cá Tầm Mai Anh Đào" src="https://www.google.com/maps?q=222%2F22%20Mai%20Anh%20%C4%90%C3%A0o%2C%20Ph%C6%B0%E1%BB%9Dng%20L%C3%A2m%20Vi%C3%AAn%2C%20%C4%90%C3%A0%20L%E1%BA%A1t&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <a class="btn btn-dark map-btn" href="https://maps.app.goo.gl/cePghgqG3yGS5qtz8" target="_blank" rel="noopener">Chỉ đường <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-
-      <form class="quote-form" id="quote-form" data-reveal style="--d:.15s" novalidate
+<!-- ===================== LIÊN HỆ ===================== -->
+<div class="view" data-page="lien-he" data-title="Liên hệ – Cá Tầm Mai Anh Đào">
+  <section class="contact-page">
+    <div class="contact-bg"><img src="assets/img/intro/toan-canh.jpg" alt="" width="1471" height="828"></div>
+    <div class="container contact-center">
+      <form class="quote-form" id="quote-form" novalidate
             action="https://docs.google.com/forms/d/e/1FAIpQLSdIbHk2aoo0ki4IkTk0lsPpL4gWC0VHjmpUVCpy4zxXmQ6c8w/formResponse" method="POST">
-        <h3>Nhận thông tin Báo giá<em>– Cá Tầm Mai Anh Đào</em></h3>
+        <p class="label">Cá Tầm Mai Anh Đào</p>
+        <h1>Liên hệ với chúng tôi</h1>
+        <p class="form-sub">Để lại thông tin, nhân viên tư vấn sẽ liên hệ để tư vấn thực đơn theo nhu cầu, khẩu vị và ngân sách của bạn.</p>
         <label>Họ và tên *
           <input type="text" name="entry.171692423" id="f-name" required autocomplete="name" placeholder="Nguyễn Văn A">
         </label>
@@ -374,13 +422,29 @@
         <label>Nội dung
           <textarea name="entry.748723401" rows="4" placeholder="Số lượng khách, giờ đến, yêu cầu về món ăn..."></textarea>
         </label>
-        <button class="btn btn-dark btn-block" type="submit">Gửi thông tin <span aria-hidden="true">→</span></button>
+        <button class="btn btn-gold btn-block" type="submit">Gửi thông tin <span aria-hidden="true">→</span></button>
         <p class="form-msg" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
+  <section class="map">
+    <iframe title="Bản đồ Cá Tầm Mai Anh Đào" src="https://www.google.com/maps?q=222%2F22%20Mai%20Anh%20%C4%90%C3%A0o%2C%20Ph%C6%B0%E1%BB%9Dng%20L%C3%A2m%20Vi%C3%AAn%2C%20%C4%90%C3%A0%20L%E1%BA%A1t&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="btn btn-dark map-btn" href="https://maps.app.goo.gl/cePghgqG3yGS5qtz8" target="_blank" rel="noopener">Chỉ đường <span aria-hidden="true">↗</span></a>
+  </section>
+</div>
 
 </main>
+
+<!-- Lời mời (ẩn ở trang Liên hệ) -->
+<section class="invite">
+  <div class="container invite-inner">
+    <div>
+      <p class="label dark" data-reveal>Một lời mời chân thành</p>
+      <h2 data-reveal style="--d:.1s">Sum họp bên người thân, lưu giữ những kỷ niệm đẹp giữa lòng Đà Lạt.</h2>
+    </div>
+    <a class="link-arrow dark" href="#dat-ban" data-booking data-reveal style="--d:.2s">Đặt bàn ngay <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="container footer-grid">
@@ -403,7 +467,6 @@
       <p class="label">Liên hệ</p>
       <ul class="footer-info">
         <li><b>Công ty TNHH Mai Anh Đào Group</b></li>
-        <li>MST: 5801566808</li>
         <li>222/22 Mai Anh Đào, P. Lâm Viên, Đà Lạt, Lâm Đồng</li>
         <li><a href="tel:02633900300">02633.900.300</a> · <a href="tel:0913683605">0913.683.605</a></li>
         <li><a href="mailto:maitranhdao.nhahang@gmail.com">maitranhdao.nhahang@gmail.com</a></li>
@@ -416,7 +479,7 @@
         <a href="https://maps.app.goo.gl/cePghgqG3yGS5qtz8" target="_blank" rel="noopener" aria-label="Chỉ đường Google Maps">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
         </a>
-        <a href="https://zalo.me/0913683605" target="_blank" rel="noopener" aria-label="Nhắn Zalo 0913683605">
+        <a href="https://zalo.me/0901234544" target="_blank" rel="noopener" aria-label="Nhắn Zalo 090 12345 44">
           <span class="zalo-txt" aria-hidden="true">Zalo</span>
         </a>
       </div>
@@ -428,7 +491,7 @@
   </div>
 </footer>
 
-<a class="fab" href="#lien-he" data-booking>Đặt bàn</a>
+<a class="fab" href="#dat-ban" data-booking>Đặt bàn</a>
 
 <dialog class="lightbox" id="lightbox" aria-label="Xem ảnh">
   <img alt="">

@@ -1,6 +1,10 @@
 # Website Cá Tầm Mai Anh Đào
 
-Website một trang (HTML/CSS/JS thuần, không cần build) cho Nhà hàng Cá Tầm Mai Anh Đào – Đà Lạt.
+Website (HTML/CSS/JS thuần, không cần build) cho Nhà hàng Cá Tầm Mai Anh Đào – Đà Lạt.
+
+Mỗi mục menu là một trang riêng, mở theo địa chỉ: `#gioi-thieu`, `#hinh-anh`, `#thuc-don`, `#tuyen-dung`, `#lien-he`
+(trang chủ là địa chỉ gốc). Nút **Đặt bàn** dẫn tới `#dat-ban` = trang Liên hệ và đặt sẵn con trỏ vào form.
+Nội dung từng trang nằm trong các khối `<div class="view" data-page="...">` của `index.html`.
 
 ## Chạy demo trên Netlify
 1. Đăng nhập https://app.netlify.com bằng tài khoản GitHub.
